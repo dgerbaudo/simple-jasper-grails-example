@@ -1,0 +1,5 @@
+/.idea/
+*.iws
+/out/
+/.slcache/
+/target/
