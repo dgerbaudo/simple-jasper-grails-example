@@ -8,7 +8,9 @@ class TestController {
     def jasperService
     def index() {
         def reportDef = new JasperReportDef(name:'report.jrxml',
-                fileFormat:JasperExportFormat.PDF_FORMAT, dataSource: new JREmptyDataSource(), parameters: [testParam: 'Hello world']
+                fileFormat:JasperExportFormat.PDF_FORMAT,
+                dataSource: new JREmptyDataSource(),
+                parameters: [testParam: 'Hello world']
         )
         response.reset();
 //      response.setContentType("application/octet-stream"); // Force browse to download file
